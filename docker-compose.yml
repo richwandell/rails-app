@@ -7,6 +7,8 @@ services:
     - ./:/var/www/app:cached
     networks:
       - rails_app_network
+    ports:
+    - 3001:3000
   db:
     image: postgres
     restart: always
